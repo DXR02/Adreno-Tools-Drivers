@@ -12,7 +12,7 @@ BUILD_VERSION="${BUILD_VERSION:-1.0}"
 run_all(){
     check_deps
     prepare_workdir
-    build_lib_for_android turnip/gen8
+    build_lib_for_android gen8
 }
 
 check_deps(){
