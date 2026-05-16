@@ -5,14 +5,14 @@ deps="git meson ninja patchelf unzip curl pip flex bison zip glslangValidator py
 workdir="$(pwd)/turnip_workdir"
 ndkver="android-ndk-r29"
 ndk="$workdir/$ndkver/toolchains/llvm/prebuilt/linux-x86_64/bin"
-mesasrc="https://github.com/whitebelyash/mesa-tu8.git"
+mesasrc="https://github.com/DXR02/mesa-unified.git"
 srcfolder="mesa"
 BUILD_VERSION="${BUILD_VERSION:-1.0}"
 
 run_all(){
     check_deps
     prepare_workdir
-    build_lib_for_android gen8
+    build_lib_for_android turnip/gen8
 }
 
 check_deps(){
